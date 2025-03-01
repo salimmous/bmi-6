@@ -1,0 +1,30 @@
+# Copyright (C) 2024 Your Name
+# This file is distributed under the same license as the BMI Calculate Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: BMI Calculate Pro 1.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bmi\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-25T00:29:52+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: bmi\n"
+
+#. Plugin Name of the plugin
+#: bmi-calculate-pro.php
+msgid "BMI Calculate Pro"
+msgstr ""
+
+#. Description of the plugin
+#: bmi-calculate-pro.php
+msgid "A professional BMI calculator with AI-powered recommendations, customizable settings, and database integration."
+msgstr ""
+
+#. Author of the plugin
+#: bmi-calculate-pro.php
+msgid "Your Name"
+msgstr ""

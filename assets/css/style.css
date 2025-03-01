@@ -1,0 +1,287 @@
+/* General Container Styling */
+.calculator-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+    align-items: start;
+    overflow-x: hidden;
+}
+
+.form-section, .result-section {
+    width: 100%;
+    max-width: 100%;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.form-section:hover, .result-section:hover {
+    transform: translateY(-4px);
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Style for the input items (input fields and select dropdowns) */
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Larger space between label and input */
+}
+
+/* Label Styling */
+.input-item label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields Styling */
+.input-item input, .input-item select {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+.input-item input:focus, .input-item select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Input Row Styling (Grid) */
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two items per row */
+    gap: 20px; /* More space between input fields */
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Results Section */
+.result-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* BMI Gauge Container */
+#bmi-gauge-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    transition: transform 0.2s ease;
+}
+
+#bmi-gauge-container:hover {
+    transform: scale(1.05);
+}
+
+.bmi-text {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Results Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 18px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background: #f9f9f9;
+    color: #333;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+        padding: 14px;
+    }
+
+    .input-item input, .input-item select {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .input-item label {
+        font-size: 14px;
+    }
+
+    .form-section, .result-section {
+        padding: 15px;
+    }
+
+    table {
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+/* Admin Section Styles */
+.bmi-admin-section {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.api-test-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.bmi-select {
+    min-width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+}
+
+#api-test-status {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#api-response-details {
+    width: 100%;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.notice {
+    padding: 12px;
+    margin: 5px 0 15px;
+    border-left: 4px solid #fff;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.notice-success {
+    border-left-color: #46b450;
+}
+
+.notice-error {
+    border-left-color: #dc3232;
+}
+
+.notice-info {
+    border-left-color: #00a0d2;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

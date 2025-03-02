@@ -2,7 +2,7 @@
 /*
 Plugin Name: BMI Calculate Pro
 Description: A professional BMI calculator with AI-powered recommendations, customizable settings, and database integration.
-Version: 1.0
+Version: 1.1.1
 Author: Your Name
 */
 

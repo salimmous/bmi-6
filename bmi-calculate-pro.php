@@ -9,7 +9,7 @@ Author: Your Name
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 // Define plugin constants
-define('BMI_PRO_VERSION', '1.0');
+define('BMI_PRO_VERSION', '1.1.1');
 define('BMI_PRO_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('BMI_PRO_PLUGIN_URL', plugin_dir_url(__FILE__));
 
